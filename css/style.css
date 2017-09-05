@@ -1086,6 +1086,21 @@ input:checked + .slider:before {
 
 
 
+
+                  }
+
+
+
+
+
+@media all and (max-width: 1700px) {
+
+
+
+.specijalna {height: 48vh;}
+
+
+
                   }
 
 
@@ -1093,11 +1108,28 @@ input:checked + .slider:before {
 
  @media all and (max-width: 1600px) {
 
+
+
 .standard-meals {width: 80%; float: left; padding: 26px 40px; margin-left: 5%; height: 90px; position: relative;}
 
 
 
                   }
+
+
+
+@media all and (max-width: 1300px) {
+
+
+
+.specijalna {height: 40vh;}
+
+
+
+                  }
+
+
+
 
 
 
