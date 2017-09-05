@@ -1079,6 +1079,24 @@ input:checked + .slider:before {
 
 
 
+ @media all and (max-width: 1800px) {
+
+.standard-meals {width: 70%; float: left; padding: 26px 40px; margin-left: 5%; height: 90px; position: relative;}
+
+
+
+                  }
+
+
+
+
+ @media all and (max-width: 1600px) {
+
+.standard-meals {width: 80%; float: left; padding: 26px 40px; margin-left: 5%; height: 90px; position: relative;}
+
+
+
+                  }
 
 
 
