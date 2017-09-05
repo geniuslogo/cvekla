@@ -1084,7 +1084,7 @@ input:checked + .slider:before {
 
 .standard-meals {width: 70%; float: left; padding: 26px 40px; margin-left: 5%; height: 90px; position: relative;}
 
-
+.specijalna {height: 48vh;}
 
 
                   }
@@ -1112,10 +1112,21 @@ input:checked + .slider:before {
 
 .standard-meals {width: 80%; float: left; padding: 26px 40px; margin-left: 5%; height: 90px; position: relative;}
 
-
+.specijalna {height: 46vh;}
 
                   }
 
+
+
+@media all and (max-width: 1500px) {
+
+
+
+.specijalna {height: 36vh;}
+
+
+
+                  }
 
 
 @media all and (max-width: 1300px) {
