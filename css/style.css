@@ -1068,11 +1068,11 @@ input:checked + .slider:before {
 .specijalna::-webkit-scrollbar-track {
 
     right: 20px;
-        background-color: #efeeee;
+        background-color: #e7e7e7;
 }
  
 .specijalna::-webkit-scrollbar-thumb {
-  background-color: #e7e7e7;
+  background-color: #ffe17f;
 }
 
 
