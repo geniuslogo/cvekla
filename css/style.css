@@ -967,8 +967,9 @@ input:checked + .slider:before {
 
 .standard { display: block;}
 
-.standard h2 {color: #93959c; font-family: 'Gotham'; font-size: 14px; text-align: left; margin-top: 13px; padding-left: 90px;}
+.standard h2 {color: #93959c; font-family: 'Gotham'; font-size: 14px; text-align: left; margin-top: 13px; padding-left: 92px;}
 .standardno {margin-top: 20px;}
+.meal {width: 98%;}
 
 .standard-meals {width: 64%; float: left; padding: 26px 40px; margin-left: 5%; height: 90px; position: relative;}
 .standard-meals:hover {background-color: #ffffff; box-shadow: 0px 3px 50px 4px rgba(0,0,0,0.14); cursor: pointer;  
@@ -1043,7 +1044,7 @@ input:checked + .slider:before {
 
 .specijalna-holder {display: block;}
 
-.specijalna {height: 54vh; overflow-y: scroll; float: left; margin-right: 1%; background-color: #f8f8f8; width: 100%;}
+.specijalna {height: 54vh; overflow-y: scroll; float: left; margin-right: 1%; background-color: #f8f8f8; width: 98%;}
 
 .tab {float: left; padding-left: 84px; margin-top: 54px; margin-bottom: 24px;}
 
