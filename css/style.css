@@ -1,0 +1,1087 @@
+/* MISHA */
+
+/* Sweep To Bottom */
+.hvr-sweep-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffd650;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+  color: white;
+}
+.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+/* Sweep To Bottom */
+.hvr-sweep-to-bottom2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-bottom2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2e2f33;;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-bottom2:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+  color: white;
+}
+.hvr-sweep-to-bottom2:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+
+
+
+/**** f o n t o v i ****/
+
+
+
+      @font-face 
+      {font-family: 'Gotham'; src:url(../Gotham-Medium.otf);}
+
+      @font-face 
+      {font-family: 'Book'; src:url(../GothamBook.otf);}
+
+      @font-face 
+      {font-family: 'Regular1'; src:url(../Gotham-Book-Regular.otf);}
+
+
+      @font-face 
+      {font-family: 'Mont'; src:url(../Montserrat-Light.otf);}
+
+
+      @font-face 
+      {font-family: 'MontBold'; src:url(../Montserrat-Regular.otf);}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+  text-align:center;
+  background: #f8f8f8;
+} 
+
+
+
+
+
+
+
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/********************************************************************    LOGIN     *********************************************************************************/
+
+ /* Large Devices, Wide Screens */
+
+
+         /****** S L I K A ******/
+
+
+.logo {float: left; margin-left: 20px; margin-top: 20px;}
+.kontakt-box {width: 27%; margin: auto; text-align: center; margin-top: 13%;}
+
+
+
+
+.group        { 
+  position:relative;  
+  clear: both;
+  display: block;
+  margin: auto;
+  margin-bottom:14%;
+}
+.kontakt input         {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #e1e1e1;
+  background-color: #f8f8f8;
+}
+
+.kontakt input:focus     { outline:none; }
+
+
+
+
+
+/* LABEL ======================================= */
+.kontakt label          {
+  color:#999; 
+  font-size:18px;
+  font-family: 'Book';
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+
+/* active state */
+.kontakt input:focus ~ label, input:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:#999;
+  font-family: 'Book';
+}
+
+/* active state */
+.kontakt textarea:focus ~ label, input:valid ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#999;
+  font-family: 'Book';
+}
+
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:100%; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#f7d35a; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+.kontakt input:focus ~ .bar:before, .kontakt input:focus ~ .bar:after {
+  width:50%;
+}
+
+.kontakt textarea:focus ~ .bar:before, .kontakt textarea:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.kontakt input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+.kontakt textarea:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#fff; }
+  to  { width:0; background:transparent;}
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#fff; }
+  to  { width:0; background:transparent;}
+}
+@keyframes inputHighlighter {
+  from { background:#fff; }
+  to  { width:0; background:transparent;}
+}
+
+.dugmence {margin-top: 17%;}
+
+.dugmence a{
+    color: #2e2f33;
+    width: 100%;
+    line-height: 60px;
+    font-family: 'Book';
+    font-size: 20px;
+    background-color: #ffe17f;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin:auto;}
+
+.dugmence a:hover{
+    color: #2e2f33;}
+
+.informacije1 {margin-top: 4%;}
+
+.informacije2 {margin:auto; text-align: center; display: block; margin-bottom: 5%}
+.informacije3 {margin-top: 3%; margin-bottom: 3%;}
+
+.informacije2 p span {
+    color: #a78a6f;
+    margin: auto;
+    text-align: center;
+    font-family: 'Gotham';
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    margin-bottom: 2%;
+    margin-top: 5%;}
+
+ .informacije2 p   {
+  text-align: center;
+  width: 96%;
+    margin: auto;
+    font-family: 'Gotham';
+    color: #1c1c1c;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 3%;
+    line-height: 32px;}
+
+
+
+
+ @media all and (max-width: 1600px) {
+
+             /****** S L I K A ******/
+
+
+
+
+.kontakt-box {width: 36%; margin: auto; text-align: center; margin-top: 13%;}
+
+
+
+                  }
+
+ @media all and (max-width: 1199px) {
+
+             /****** S L I K A ******/
+
+
+
+
+.kontakt-box {width: 50%; margin: auto; text-align: center; margin-top: 13%;}
+
+
+
+                  }
+
+
+ @media all and (max-width: 900px) {
+
+             /****** S L I K A ******/
+
+.kontakt-box {width: 60%; margin: auto; text-align: center; margin-top: 13%;}
+
+
+
+
+
+
+
+                  }
+
+
+
+
+
+
+
+        /*              TELEFONI              */
+
+@media all and (max-width: 640px) {
+
+  .kontakt-box {width: 70%; margin: auto; text-align: center; margin-top: 13%;}
+
+
+
+             /****** S L I K A ******/
+
+.kontakt-holder {clear: both; width: 100%; margin:auto;}
+.kontakt-container {width: 96%; background: url(../images/cenovnik1.jpg) no-repeat center top;  margin:auto; background-size: cover; height: 470px;   -webkit-animation: fadeEffect 1.5s;animation: fadeEffect 1.5s;}
+.kontakt-container p {color: rgba(0,0,0,0);  font-family: 'PlayItal'; -webkit-font-smoothing: antialiased;
+                    letter-spacing: 2px; font-size: 40px; padding-top:27%; padding-bottom: 3%; width: 100%; text-align: center; opacity: 0;}
+
+
+
+
+
+                  }
+
+
+
+/*********************************************   kraj logina   *************************************************************/
+
+
+
+
+
+
+
+
+.leftside {width: 440px; float: left; background-color: #ffffff; height: 100vh; position: fixed;}
+ 
+
+
+
+                     /**** calendar ****/
+
+.calendar-holder {margin-left: 20px; margin-top: 30px; width: 440px; float: left; }
+
+.animate{
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a{
+  text-decoration: none;
+  color: #FF462B;
+
+}
+
+.clearfix{
+  clear: both;
+}
+/* required */
+.calendar{
+ 
+  width: 410px;
+
+
+  background-color: #ffffff;
+}
+
+
+
+.calendar h1 span{
+  display: block;
+}
+
+.calendar .col{
+  position: relative;
+  float: left;
+  height: 100%;
+}
+
+.calendar .col .content{
+
+}
+
+.calendar ul{
+  margin: 0px;
+}
+
+.calendar ul li{
+  list-style: none;
+}
+
+
+
+.calendar-header img {margin-left: 20px; margin-top: 14px; float: left; opacity: 1; }
+.Ellipse_2 {
+  background-color: rgb(46, 47, 51);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+}
+
+.jaguar { margin-left:  350px; margin-top: -52px; opacity: 1;}
+
+.calendar-header img:hover {margin-left: 20px; margin-top: 14px; float: left; cursor: pointer; opacity: 0.6; transition: 0.3s;}
+.jaguar:hover { margin-left:  350px; margin-top: -52px; cursor: pointer; opacity: 0.6; transition: 0.3s;}
+
+.calendar-header {width: 340px; height: 60px; text-align: center;}
+.calendar-header img {float: left;}
+.calendar-header p {text-align: center; color: #2e2f33; font-family: 'Book'; line-height: 44px; font-size: 20px; margin-right: -30px;  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+
+.calendar .rightCol{
+
+}
+
+.calendar .rightCol h2{
+  color: #C7BEBE;
+  text-align: right;
+  margin-bottom: 70px;
+}
+
+.calendar .months li,
+.calendar .weekday li,
+.calendar .days li{
+  font-family: 'Book';
+  float: left;
+
+}
+
+.calendar .months li a,
+.calendar .weekday li a,
+.calendar .days li a{
+  display: block;
+  color: #2e2f33;
+}
+
+
+
+.calendar .weekday li a{
+  width: 58px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.calendar .days li{
+  width: 58px;
+}
+
+.calendar .days li a{
+  width: 39px;
+  height: 39px;
+  text-align: center;
+  margin: auto auto;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+.calendar .days li a:hover{
+  background-color: #f5f5f5;
+}
+
+.calendar .days li .selected{
+  background-color: #FFFFFF!important;
+  box-shadow: inset 0px 0px 0px 3px #ffe17f;
+  color: #2e2f33;
+}
+
+.calendar .days li .event{
+  color: #2e2f33;
+}
+
+
+/* placeholder color */
+::-webkit-input-placeholder {color: #ffffff; }
+:-moz-placeholder {color: #ffffff; }
+::-moz-placeholder {color: #ffffff; }
+:-ms-input-placeholder {color: #ffffff; }
+
+/**** kraj calendara ****/
+
+
+
+                     /**** REZERVACIJA ****/
+
+.ord { display: block;     margin-top: 67vh;}
+
+.linea {height: 1px; background-color: #dadadc; width: 380px; margin-left: 30px; margin-bottom: 30px;}
+.ordered {width: 400px; float: left; margin-bottom: 30px;  }
+.ordered p {float: left; margin-left: 30px; font-size: 17px; color: #2e2f33;   font-family: 'Book'; margin-bottom: 7px;}
+.ordered .cena {float: right; margin-right: -10px;}
+
+.ordered h5 {color: #93959c; font-family: 'Book'; font-size: 15px; float: left; margin-left: 30px;}
+
+
+.betontotal {height: 80px;  bottom: 0; position: absolute; width: 440px; margin-top: 10vh;}
+
+.betontotal-left {float: left; width: 80px; height: 80px; background-color: #ffe17f; background-image: }
+.betontotal-left:hover {  -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; 
+  -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; }
+  .betontotal-left img {margin-top: 28px;}
+
+.betontotal-right {height: 80px; background-color:#2e2f33;}
+.betontotal-right p {color: #ffffff; font-size: 24px; font-family: 'Gotham'; float: right; margin-right: 30px; line-height: 80px;}
+
+/**** kraj REZERVACIJe ****/
+
+
+
+
+
+
+/********************************************************************    DESNI PANEL     *********************************************************************************/
+
+.rightside {background: #f8f8f8;  height: 100vh; margin-left: 440px;}
+
+.pref {  width: 100%; height: 34px; padding-top: 8px;}
+
+
+.pref p {font-family: 'Gotham'; color: #2e2f33; font-size: 14px; line-height: 14px; padding-left: 16px; padding-right: 3px;}
+.pref ul {float: right; padding-right: 12px;}
+
+.pref ul li {  display: inline-block; vertical-align: middle;}
+.preferences:hover  {opacity: 0.5;   -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.logout:hover  {opacity: 0.5;   -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+
+
+
+
+
+
+/*********************************************   kraj desnog panela   *************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************  POPUP    **************/
+
+.box {
+  margin: 0 auto;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}
+
+.popup {
+  margin: 10% auto;
+  padding: 30px 0px 0px 30px;
+  background: #fff;
+  width: 660px;
+  height: 420px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  float: left;
+  margin-top: 0;
+  color: #9d9ea5;
+  font-family: "Gotham";
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.popup h4 {
+  float: left;
+  margin-top: 0;
+  color: #2e2f33;
+  font-family: "Book";
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 6%;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+.popup .apply {
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ffe17f;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    transition: all 200ms;
+    font-size: 20px;
+    font-family: Book;
+    text-decoration: none;
+    color: #2e2f33;
+    left: 0 !important;
+    bottom: 0 !important;
+}
+.popup .apply:hover {
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ffe17f;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    transition: all 200ms;
+    font-size: 20px;
+    font-family: Book;
+    text-decoration: none;
+    color: #2e2f33;
+    left: 0 !important;
+    bottom: 0 !important;
+}
+
+
+.popup .close {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 20px;
+    font-family: Book;
+    text-decoration: none;
+    color: #2e2f33;
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    right: 0 !important;
+    bottom: 0 !important;
+    border-top: 1px solid #dadadc;
+}
+
+
+.popup .close:hover {
+  color: #ffffff;
+
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 90%;
+  }
+  .popup{
+    width: 90%;
+  }
+}
+
+.radios ul li {float: left; padding-top: 21px; display: inline-flex; padding-left: 6px;}
+.radios ul li:first-child {padding-top: 30px; }
+
+.radios ul li input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+}
+
+.radios ul li label{
+  display: block;
+  position: relative;
+  font-family: 'Book';
+  font-size: 16px;
+  color: #2e2f33;
+  padding: 21px 25px 0px 60px;
+  margin: 2px auto;
+  height: 24px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+
+
+.radios ul li .check{
+  display: block;
+  position: absolute;
+  border: 2px solid #c5c5cc;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  left: 50px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+
+
+
+.radios ul li .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 18px;
+  width: 18px;
+  top: -1px;
+  left: -1px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 2px solid #ffe17f;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #ffe17f;
+}
+
+input[type=radio]:checked ~ label{
+  color: #2e2f33;
+}
+
+
+
+/****************  toggle    **************/
+
+.toggle1 {margin-left:12px;}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 18px;
+  
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  width: 34px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c5c5cc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #67d5cd;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.radios ul li p {
+  font-size: 16px;
+    font-family: 'Book';
+    color: #2e2f33;
+    line-height: 28px; 
+    margin-left: -54px !important;}
+
+
+
+/****************  kraj POPUP    **************/
+
+
+
+
+
+
+
+
+                        /****************  STANDARD MEALS    **************/
+
+
+.standard { display: block;}
+
+.standard h2 {color: #93959c; font-family: 'Gotham'; font-size: 14px; text-align: left; margin-top: 13px; padding-left: 90px;}
+.standardno {margin-top: 20px;}
+
+.standard-meals {width: 64%; float: left; padding: 26px 40px; margin-left: 5%; height: 90px; position: relative;}
+.standard-meals:hover {background-color: #ffffff; box-shadow: 0px 3px 50px 4px rgba(0,0,0,0.14); cursor: pointer;  
+                      -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+
+
+
+.standard-meals:hover:after {content: "RESERVE";
+    width: 90px;
+    color: #fff;
+    background-color: #c5c5cc;
+    font-size: 14px;
+    font-family: 'Book';
+    float: left;
+    line-height: 90px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: -90px;
+      top: 0px;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */}
+
+    .standard-meals:active:after {background: url('../img/ogzi.png') no-repeat center;
+   content:"icon";
+    text-indent:-999em;
+    width: 90px;
+    color: #fff;
+    background-color: #9beacd;
+    font-size: 14px;
+    font-family: 'Book';
+    float: left;
+    line-height: 90px; 
+    letter-spacing: 1px;
+    position: absolute;
+    right: -90px;
+      top: 0px;
+    animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -o-animation: fadein 2.5s; /* Opera */}
+
+
+
+
+
+
+
+
+.standard1:hover {border-bottom: 1px solid #ffffff;}
+
+
+.standard-meals p {float: left;  font-size: 17px; color: #2e2f33;   font-family: 'Book'; margin-bottom: 7px; text-align: left;}
+.standard-meals .cena {float: right; margin-right: -10px;}
+
+.standard-meals h5 {color: #93959c; font-family: 'Book'; font-size: 15px; float: left; text-align: left; }
+.standard1 {border-bottom: 1px solid #dadadc;}
+
+/****************  kraj STANDARD MEALS    **************/
+
+
+
+
+
+
+
+
+
+
+                        /****************  SPECIAL MEALS    **************/
+
+.specijalna-holder {display: block;}
+
+.specijalna {height: 54vh; overflow-y: scroll; float: left; margin-right: 1%; background-color: #f8f8f8; width: 100%;}
+
+.tab {float: left; padding-left: 84px; margin-top: 54px; margin-bottom: 24px;}
+
+.tabc {-webkit-animation: fadeEffect 1s; animation: fadeEffect 1s;}
+
+
+.tab1 button {color: #93959c; font-family: 'Gotham'; font-size: 14px; text-align: left; margin-top: 13px;
+          background-color: inherit; float: left; border: none; outline: none; cursor: pointer; padding: 4px 10px; transition: 0.3s; margin-right: 50px; border-bottom: 3px solid #f8f8f8;}
+
+.tab1 button:last-child {margin-right: 0px;}
+
+.tab button:hover { color: #2e2f33; border-bottom: 3px solid #f8f8f8;}
+.tab button.active { color: #2e2f33; border-bottom: 3px solid #ffe17f; transition: 0.4s}
+
+
+.specijalna::-webkit-scrollbar {
+    width: 10px;
+    right: 20px;
+}
+ 
+.specijalna::-webkit-scrollbar-track {
+
+    right: 20px;
+}
+ 
+.specijalna::-webkit-scrollbar-thumb {
+  background-color: #ffe17f;
+}
+
+
+/****************  kraj SPECIAL MEALS    **************/
+
+
+
+
+
+
+
+
+
+
