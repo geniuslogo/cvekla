@@ -436,6 +436,51 @@ Primary style
 
 
 
+.image-container::before {background: url(../img/paradajz.svg) no-repeat;
+    content: '';
+    opacity: 0.65;
+    width: 2000px;
+    height: 400px;
+    display: block;
+    position: fixed;
+    bottom: -18%;}
+
+
+
+ @media all and (max-width: 1600px) {
+
+
+
+.image-container::before { bottom: -19%;}
+
+                  }
+
+
+
+@media all and (max-width: 1500px) {
+
+
+
+.image-container::before {bottom: -20%;}
+
+
+
+                  }
+
+
+@media all and (max-width: 1300px) {
+
+
+
+.image-container::before {bottom: -28%;}
+
+
+
+                  }
+
+
+
+
 /*********************************************   kraj logina   *************************************************************/
 
 
