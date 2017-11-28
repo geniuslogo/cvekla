@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  	<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
+
+  	
+	<title>cvekla</title>
+</head>
+<body>
+
+
+
+										<!--leftside-->
+			<div class="leftside">
+					
+
+<!--kalendar-->
+					<div class="calendar-holder">
+
+						 	<div class="calendar">
+
+
+							<div class="col rightCol">
+								<div class="content">
+										<div class="calendar-header">
+										 	<img src="img/kalendar-left.png" alt="Left">
+										 	<p>June 2017</p>
+										 	<div class="jaguar"><img src="img/kalendar-right.png" alt="Right"></div>
+										 </div>
+									
+									<div class="clearfix"></div>
+									<ul class="weekday">
+										<li><a href="#" title="Mon" data-value="1">mon</a></li>
+										<li><a href="#" title="Tue" data-value="2">tue</a></li>
+										<li><a href="#" title="Wed" data-value="3">wed</a></li>
+										<li><a href="#" title="Thu" data-value="4">thu</a></li>
+										<li><a href="#" title="Fri" data-value="5">fri</a></li>
+										<li><a href="#" title="Say" data-value="6">sat</a></li>
+										<li><a href="#" title="Sun" data-value="7">sun</a></li>
+									</ul>
+									<div class="clearfix"></div>
+									<ul class="days">
+										<script>
+											for( var _i = 1; _i <= 31; _i += 1 ){
+												var _addClass = '';
+												if( _i === 12 ){ _addClass = ' class="selected"'; }
+												
+												switch( _i ){
+													case 8:
+													case 10:
+													case 27:
+														_addClass = ' class="event"';
+													break;
+												}
+
+												document.write( '<li><a href="#" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
+											}
+										</script>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+							<div class="clearfix"></div>
+
+							</div>
+
+
+        			</div>
+<!-- kraj  kalendara -->
+
+
+
+			<div class="ord">
+				<div class="ordered ordered1">
+					<p>Ćevapi sa pomfritom 5 komada</p>
+					<p class="cena">120</p>
+					<h5>Ćevapi, pomfrit</h5>
+				</div>
+ <div style="clear: both"></div>
+				<div class="linea">
+
+				</div>
+
+				<div class="ordered">
+					<p>Palačinke sa kremom&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+					<p class="cena"> 70</p>
+					<h5>Palačinke, krem</h5>
+				</div>
+			</div>	
+
+
+ <div style="clear: both"></div>
+
+
+				<div class="betontotal">
+								<div class="betontotal-left hvr-sweep-to-bottom">
+								<img src="img/igz.svg" style="width:24px;">
+								</div>
+								<div class="betontotal-right">
+								<p>Total&nbsp&nbsp 190</p>
+								</div>
+				</div>
+
+
+
+        	</div>
+
+
+<!-- kraj leftside -->
+
+
+
+
+
+
+
+
+
+
+        <div class="rightside">
+
+
+
+
+				<!--  PREFERENCES DIALOG  -->
+
+	        <div class="pref">
+		        <ul>
+			        <li>
+
+			        <div class="box">
+							<a class="button" href="#popup1"><img src="img/preferences.svg" class="preferences" style="width:16px;"></a>
+						</div>
+
+						<div id="popup1" class="overlay">
+							<div class="popup">
+								<h2>PREFERENCES</h2>
+								 <div style="clear: both"></div>
+								<h4>Select an option</h4>
+								
+
+								<div class="radios">
+									  <ul>
+										  <li>
+										    <input type="radio" id="f-option" name="selector">
+										    <label for="f-option">Send me email reminder to order meal</label>
+										    
+										    <div class="check"></div>
+										  </li>
+										  
+										  <li>
+										    <input type="radio" id="s-option" name="selector">
+										    <label for="s-option">Choose randomle one of two standard meals</label>
+										    
+										    <div class="check"><div class="inside"></div></div>
+										  </li>
+										  
+										  <li>
+										    <input type="radio" id="t-option" name="selector">
+										    <label for="t-option">Make order which is based on my previously of standard meals</label>
+										    
+										    <div class="check"><div class="inside"></div></div>
+										  </li>
+
+										  <li>               <!--toggle-->
+								                <div class="toggle1">
+								                    <label class="switch">
+								                        <input type="checkbox">
+								                        <div class="slider round"></div>
+								                    </label>
+								                </div>
+								                <p>Disable all preferences</p>
+										  </li>
+
+									</ul>
+								</div>
+								<a class="apply hvr-sweep-to-bottom"  href="#">Apply</a>
+								<a class="close hvr-sweep-to-bottom2" href="#">Cancel</a>
+
+								<div class="content">
+								</div>
+							</div>
+						</div></a>
+					</li>
+
+<!--  kraj PREFERENCES DIALOGa  -->
+
+			        <li><p>Miloš</p></li>
+			        <li><a href="index.html"><img src="img/logout.svg" class="logout" alt="pref" style="width:16px;"></a></li>
+
+
+
+		        </ul>
+	            
+	        </div>
+
+
+	        				<!--  STANDARDNA JELA  -->
+
+
+
+
+
+			<div class="standard">
+
+			  <h2>STANDARD MEALS</h2>
+
+				<div class="standardno">
+						<div class="meal">
+							<div class="standard-meals standard1" >
+								<p>Ćufte u sosu sa krompir pireom</p>
+								<p class="cena">140</p>
+								 <div style="clear: both"></div>
+								<h5>Ćufte od mlevenog mesa, paradajz sos, krompir pire</h5>
+							</div>
+
+						</div>
+
+						</div>
+						<div class="meal">
+							<div class="standard-meals" >
+								<p>Pileći file sa pomfritom</p>
+								<p class="cena">140</p>
+								 <div style="clear: both"></div>
+								<h5>Pileći file, pomfrit</h5>
+							</div>
+
+						</div>
+				</div>
+
+
+
+
+<!--  kraj STANDARDNih JELA  -->
+
+
+
+
+
+	        				<!--  SPECIJALNA JELA  -->
+
+        <div class="specijalna-holder hideme">
+
+
+
+
+                <div class="tab tab1">
+                  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">SPECIAL MEALS (ALL)</button>
+                  <button class="tablinks" onclick="openCity(event, 'Madrid')">EGGS & MORE</button>
+                  <button class="tablinks" onclick="openCity(event, 'Paris')">MEAT</button>
+                  <button class="tablinks" onclick="openCity(event, 'Tokyo')">SALADS</button>
+                  <button class="tablinks" onclick="openCity(event, 'Kragujevac')">SOUPS</button>
+                  <button class="tablinks" onclick="openCity(event, 'Beograd')">FISH</button>
+                  <button class="tablinks" onclick="openCity(event, 'NoviSad')">DESERT</button>
+                </div>
+
+
+                <div class="specijalna">
+
+
+	                <div id="London" class="tabc">
+
+	                		<div class="standard-meals standard1" >
+								<p>Ćevapi sa pomfritom 10 komada</p>
+								<p class="cena">180</p>
+								 <div style="clear: both"></div>
+								<h5>Ćevapi, pomfrit</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Ćevapi sa pomfritom 5 komada</p>
+								<p class="cena">120</p>
+								 <div style="clear: both"></div>
+								<h5>Ćevapi, pomfrit</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Karađorđeva šnicla sa pomfritom</p>
+								<p class="cena">280</p>
+								 <div style="clear: both"></div>
+								<h5>Svinjski but, kačkavalj, tartar sos</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Pileći file 200g</p>
+								<p class="cena">170</p>
+								 <div style="clear: both"></div>
+								<h5>Pileći file sa prilogom po izboru (povrće, pirinač, krompir)</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Ćureći file 200g</p>
+								<p class="cena">280</p>
+								 <div style="clear: both"></div>
+								<h5>Ćureći file 200g sa prilogom po izboru (povrće, pirinač, krompir)</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Pileći file 200g</p>
+								<p class="cena">170</p>
+								 <div style="clear: both"></div>
+								<h5>Pileći file sa prilogom po izboru (povrće, pirinač, krompir)</h5>
+							</div>
+
+	                		<div class="standard-meals standard1" >
+								<p>Burito sa piletinom</p>
+								<p class="cena">120</p>
+								 <div style="clear: both"></div>
+								<h5>Tortilja, pavlaka, piletina, kačkavalj, salsa, kukuruz šećerac, zelena salata</h5>
+							</div>
+
+
+							<div class="standard-meals standard1" >
+								<p>Burito ljuti</p>
+								<p class="cena">120</p>
+								 <div style="clear: both"></div>
+								<h5>Tortilja, pavlaka, piletina, kačkavalj,čili sos, salsa, kukuruz šećerac, zelena salata</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Juneća snicla sa pomfritom</p>
+								<p class="cena">280</p>
+								 <div style="clear: both"></div>
+								<h5>Juneća šnicla, pomfrit</h5>
+							</div>
+
+
+	                		<div class="standard-meals standard1" >
+								<p>Riblja čorba</p>
+								<p class="cena">80</p>
+								 <div style="clear: both"></div>
+								<h5>Riba oslić, riblji fond, začini</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Teleća čorba</p>
+								<p class="cena">90</p>
+								 <div style="clear: both"></div>
+								<h5>Juneći but, juneći fond, začini</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Paradajz čorba</p>
+								<p class="cena">60</p>
+								 <div style="clear: both"></div>
+								<h5>Paradajz, crni luk, začini</h5>
+							</div>
+
+							<div class="standard-meals" >
+								<p>Dnevna supa</p>
+								<p class="cena">15</p>
+								 <div style="clear: both"></div>
+								<h5>Dnevna supa koja se služi uz standardna jela</h5>
+							</div>
+
+	                		<div class="standard-meals standard1" >
+								<p>Tartar sos</p>
+								<p class="cena">40</p>
+								 <div style="clear: both"></div>
+								<h5>Majonez, kiseli krastavac</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Cezar salata</p>
+								<p class="cena">150</p>
+								 <div style="clear: both"></div>
+								<h5>Grilovana piletina, grilovana slanina, zelena salata, paradajz, kubeti, dresing, parmezan</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Grčka salata</p>
+								<p class="cena">110</p>
+								 <div style="clear: both"></div>
+								<h5>Zelena salata, paprika, luk crveni, paradajz, krastavac, masline, sir, origano, ulje, sirće</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Pileća salata</p>
+								<p class="cena">140</p>
+								 <div style="clear: both"></div>
+								<h5>Zelena salata, paradajz, krastavac, kupus, šargarepa, testenina, grilovana piletina, pavlaka, majonez</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Grilovano povrće</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Tikvice, pečurke, paradajz, luk crni, paprika</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Pečurke na roštilju</p>
+								<p class="cena">60</p>
+								 <div style="clear: both"></div>
+								<h5>Pečurke, pirinač</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Bareno povrće (MRSNO)</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>Mešano bareno povrće, maslac</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Bareno povrće na vodi</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>Mešano bareno povrće na vodi</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Dnevna salata</p>
+								<p class="cena">15</p>
+								 <div style="clear: both"></div>
+								<h5>Dnevna salata koja se služi uz standardna jela</h5>
+							</div>
+
+
+							<div class="standard-meals standard1" >
+								<p>Palačinke sa kremom</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Palačinke, krem</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Palačinke sa kremom i plazmom</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Palačinke, krem, plazma</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Palačinke sa džemom</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Palačinke, džem</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Palačinke sa orasima</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Palačinke, orasi</h5>
+							</div>
+
+							<div class="standard-meals " >
+								<p>Slatkiš</p>
+								<p class="cena">15</p>
+								 <div style="clear: both"></div>
+								<h5>Slatkiš koji se služi uz standardna jela</h5>
+							</div>
+
+	                </div>
+
+
+	                <div id="Madrid" class="tabc">
+
+	                		<div class="standard-meals standard1" >
+								<p>Omlet sa šunkom</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>3 jaja, šunka, sir</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Omlet sa slaninom</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>3 jaja, slanina, sir</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Ham & eggs</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>3 jaja na oko, šunka, sir</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Jaja na oko</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>3 jaja, sir</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Kombinovani omlet</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>3 jaja, šunka, slanina, pečurke, sir</h5>
+							</div>
+
+	                		<div class="standard-meals standard1" >
+								<p>Bacon & eggs</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>3 jaja, slanina, sir</h5>
+							</div>
+
+
+							<div class="standard-meals standard1" >
+								<p>Prženice</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>Hleb, jaja, sir</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Omlet sa povrćem</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>3 jaja, pečurke, praziluk, tikvice, paprika, sir</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Zakuska za jednu osobu</p>
+								<p class="cena">120</p>
+								 <div style="clear: both"></div>
+								<h5>Svinjska pečenica, slanina, šunka, sir</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Sir (porcija)</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Sir</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Kajmak (porcija)</p>
+								<p class="cena">120</p>
+								 <div style="clear: both"></div>
+								<h5>Kajmak</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Pomfrit</p>
+								<p class="cena">60</p>
+								 <div style="clear: both"></div>
+								<h5>Pomfrit</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Pohovani kačkavalj</p>
+								<p class="cena">120</p>
+								 <div style="clear: both"></div>
+								<h5>Pohovani kačkavalj, tartar sos</h5>
+							</div>
+
+
+	                </div>
+
+
+
+	                <div id="Paris" class="tabc">
+
+	                		<div class="standard-meals standard1" >
+								<p>Ćevapi sa pomfritom 10 komada</p>
+								<p class="cena">180</p>
+								 <div style="clear: both"></div>
+								<h5>Ćevapi, pomfrit</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Ćevapi sa pomfritom 5 komada</p>
+								<p class="cena">120</p>
+								 <div style="clear: both"></div>
+								<h5>Ćevapi, pomfrit</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Karađorđeva šnicla sa pomfritom</p>
+								<p class="cena">280</p>
+								 <div style="clear: both"></div>
+								<h5>Svinjski but, kačkavalj, tartar sos</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Pileći file 200g</p>
+								<p class="cena">170</p>
+								 <div style="clear: both"></div>
+								<h5>Pileći file sa prilogom po izboru (povrće, pirinač, krompir)</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Ćureći file 200g</p>
+								<p class="cena">280</p>
+								 <div style="clear: both"></div>
+								<h5>Ćureći file 200g sa prilogom po izboru (povrće, pirinač, krompir)</h5>
+							</div>
+
+	                		<div class="standard-meals standard1" >
+								<p>Burito sa piletinom</p>
+								<p class="cena">120</p>
+								 <div style="clear: both"></div>
+								<h5>Tortilja, pavlaka, piletina, kačkavalj, salsa, kukuruz šećerac, zelena salata</h5>
+							</div>
+
+
+							<div class="standard-meals standard1" >
+								<p>Burito ljuti</p>
+								<p class="cena">120</p>
+								 <div style="clear: both"></div>
+								<h5>Tortilja, pavlaka, piletina, kačkavalj,čili sos, salsa, kukuruz šećerac, zelena salata</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Juneća snicla sa pomfritom</p>
+								<p class="cena">280</p>
+								 <div style="clear: both"></div>
+								<h5>Juneća šnicla, pomfrit</h5>
+							</div>
+
+
+	                </div>
+
+
+
+	                <div id="Tokyo" class="tabc">
+
+	                		<div class="standard-meals standard1" >
+								<p>Tartar sos</p>
+								<p class="cena">40</p>
+								 <div style="clear: both"></div>
+								<h5>Majonez, kiseli krastavac</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Cezar salata</p>
+								<p class="cena">150</p>
+								 <div style="clear: both"></div>
+								<h5>Grilovana piletina, grilovana slanina, zelena salata, paradajz, kubeti, dresing, parmezan</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Grčka salata</p>
+								<p class="cena">110</p>
+								 <div style="clear: both"></div>
+								<h5>Zelena salata, paprika, luk crveni, paradajz, krastavac, masline, sir, origano, ulje, sirće</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Pileća salata</p>
+								<p class="cena">140</p>
+								 <div style="clear: both"></div>
+								<h5>Zelena salata, paradajz, krastavac, kupus, šargarepa, testenina, grilovana piletina, pavlaka, majonez</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Grilovano povrće</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Tikvice, pečurke, paradajz, luk crni, paprika</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Pečurke na roštilju</p>
+								<p class="cena">60</p>
+								 <div style="clear: both"></div>
+								<h5>Pečurke, pirinač</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Bareno povrće (MRSNO)</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>Mešano bareno povrće, maslac</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Bareno povrće na vodi</p>
+								<p class="cena">100</p>
+								 <div style="clear: both"></div>
+								<h5>Mešano bareno povrće na vodi</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Dnevna salata</p>
+								<p class="cena">15</p>
+								 <div style="clear: both"></div>
+								<h5>Dnevna salata koja se služi uz standardna jela</h5>
+							</div>
+
+
+	                </div>
+
+
+
+
+	                <div id="Kragujevac" class="tabc">
+
+	                		<div class="standard-meals standard1" >
+								<p>Riblja čorba</p>
+								<p class="cena">80</p>
+								 <div style="clear: both"></div>
+								<h5>Riba oslić, riblji fond, začini</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Teleća čorba</p>
+								<p class="cena">90</p>
+								 <div style="clear: both"></div>
+								<h5>Juneći but, juneći fond, začini</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Paradajz čorba</p>
+								<p class="cena">60</p>
+								 <div style="clear: both"></div>
+								<h5>Paradajz, crni luk, začini</h5>
+							</div>
+
+							<div class="standard-meals" >
+								<p>Dnevna supa</p>
+								<p class="cena">15</p>
+								 <div style="clear: both"></div>
+								<h5>Dnevna supa koja se služi uz standardna jela</h5>
+							</div>
+
+	                </div>
+
+
+
+
+	                <div id="Beograd" class="tabc">
+
+	                		<div class="standard-meals standard1" >
+								<p>Pastrmka sa krompir salatom</p>
+								<p class="cena">280</p>
+								 <div style="clear: both"></div>
+								<h5>Pastrmka, krompir salata</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Losos (kotlet) 300g</p>
+								<p class="cena">330</p>
+								 <div style="clear: both"></div>
+								<h5>Kotlet lososa, dalmatinska garnitura (blitva, krompir i paradajz) ili grilovano povrće</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Oslić sa krompir salatom</p>
+								<p class="cena">140</p>
+								 <div style="clear: both"></div>
+								<h5>Oslić, krompir salata</h5>
+							</div>
+
+							<div class="standard-meals" >
+								<p>Pastrmka sa grilovanim povrćem</p>
+								<p class="cena">280</p>
+								 <div style="clear: both"></div>
+								<h5>Pastrmka, crni luk, tikvice, paradajz, pečurke, paprika</h5>
+							</div>
+
+	                </div>
+
+
+
+	                <div id="NoviSad" class="tabc">
+
+							<div class="standard-meals standard1" >
+								<p>Palačinke sa kremom</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Palačinke, krem</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Palačinke sa kremom i plazmom</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Palačinke, krem, plazma</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Palačinke sa džemom</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Palačinke, džem</h5>
+							</div>
+
+							<div class="standard-meals standard1" >
+								<p>Palačinke sa orasima</p>
+								<p class="cena">70</p>
+								 <div style="clear: both"></div>
+								<h5>Palačinke, orasi</h5>
+							</div>
+
+							<div class="standard-meals " >
+								<p>Slatkiš</p>
+								<p class="cena">15</p>
+								 <div style="clear: both"></div>
+								<h5>Slatkiš koji se služi uz standardna jela</h5>
+							</div>
+
+	                </div>
+
+
+
+	            </div>
+
+
+
+
+    
+    	</div>
+
+
+
+    	</div>
+
+
+
+
+
+
+<!--  kraj SPECIJALNIH JELA  -->
+
+
+
+
+
+
+
+
+
+        </div>
+<!-- kraj  rightside -->
+
+
+
+
+
+
+ <div style="clear: both"></div>
+
+
+
+<!-- SPECIAL MEALS  -->
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabc, tablinks;
+    tabc = document.getElementsByClassName("tabc");
+    for (i = 0; i < tabc.length; i++) {
+        tabc[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+					 
+
+</body>
+</html>
