@@ -1106,7 +1106,7 @@ input:checked + .slider:before {
 
 
 
-.tab button:first-child::before {background: url(../img/sh-dis-02.svg) no-repeat;
+.tab button:first-child::before {background: url(../img/sh-dis-09.svg) no-repeat;
     content: '';
     width: 44px;
     height: 38px;
@@ -1114,7 +1114,7 @@ input:checked + .slider:before {
     margin:auto;
     margin-bottom: 8px;}
 
-.tab button.active:first-child::before {background: url(../img/sh-02.svg) no-repeat;
+.tab button.active:first-child::before {background: url(../img/sh-09.svg) no-repeat;
     content: '';
     width: 44px;
     height: 38px;
